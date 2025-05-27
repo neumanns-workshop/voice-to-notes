@@ -4,7 +4,7 @@ A Python application that transcribes voice recordings to text and processes the
 
 ## Features
 
-- Transcribe audio files to text using OpenAI's Whisper model
+- Transcribe audio files to text using local Whisper model
 - Process transcripts using Ollama (local LLM) to generate:
   - Key decisions and commitments
   - Current blockers and dependencies
@@ -17,8 +17,8 @@ A Python application that transcribes voice recordings to text and processes the
 ## Prerequisites
 
 - Python 3.8 or higher
-- OpenAI API key (for transcription)
-- Ollama installed and running locally (for transcript processing)
+- Ollama installed and running locally
+- CUDA-capable GPU recommended for faster transcription
 
 ## Installation
 
@@ -39,12 +39,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -e .
 ```
 
-4. Set up your OpenAI API key:
-```bash
-export OPENAI_API_KEY='your-api-key-here'
-```
-
-5. Install and start Ollama:
+4. Install and start Ollama:
 - Follow instructions at https://ollama.ai/
 - Pull the Gemma model:
 ```bash
