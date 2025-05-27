@@ -14,6 +14,10 @@ A Python application that transcribes voice recordings to text and processes the
 - Generate consolidated daily to-do lists from multiple transcripts
 - Save processed transcripts in structured JSON format
 
+## Current Status
+
+The application currently consists of separate scripts for each step of the process. Future versions will integrate these into a more cohesive workflow.
+
 ## Prerequisites
 
 - Python 3.8 or higher
